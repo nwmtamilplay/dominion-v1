@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
               <div className="flex flex-col gap-2">
                 <h6 className="m-0 p-0 montagu-slab text-lg">24/7 CUSTOMER SERVICE</h6>
                 <p className="m-0 p-0 poppins">
-                  We're here for you anytime! Our dedicated support team is available 24/7
+                  We&apos;re here for you anytime! Our dedicated support team is available 24/7
                 </p>
               </div>
             </div>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
               <div className="flex flex-col gap-2">
                 <h6 className="m-0 p-0 montagu-slab text-lg">MONEY-BACK GUARANTEE</h6>
                 <p className="m-0 p-0 poppins">
-                  Shop worry-free with our money-back guarantee. If you're not completely satisfied
+                  Shop worry-free with our money-back guarantee. If you&apos;re not completely satisfied
                 </p>
               </div>
             </div>
