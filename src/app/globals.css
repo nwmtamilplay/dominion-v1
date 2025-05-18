@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+:root {
+    --hover-bg-light: rgba(208, 205, 205, 0.312);
+    --text-primary: #63005E;
+    --text-secondary: rgba(0, 0, 0, 0.717);
+    --tab-border-active: #1c398e;
+    --tab-border-inactive: #1c398e00;
+    --btn-default-bg: #D1D1D1;
+    --btn-hover-bg: #001646;
+    --btn-hover-text: #FFF;
+    --star-color: url(/asset/images/star.svg);
+    --heart-default: url(/asset/images/heart.svg);
+    --cart-icon: url(/asset/images/cart.svg);
+    --edit-icon: url(/asset/images/edit.svg);
+    --heart-hover: #FF0E5A;
+    --color-heading-text: #004563;
+    --color-heading-bg: rgba(0, 69, 99, 0.16);
+    --color-border: #D1D1D1;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.244);
+    --box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* offer root start */
+    --offer-bg: #000;
+    --clr-tag-bg: #C4FF01;
+    --clr-tag-text: #000;
+    --clr-h5: #8B8585;
+    --clr-h4: #D0D0D0;
+    --clr-link: #C4FF01;
+    --clr-link-hover: #1c398e;
+    /* offer root end */
+    /* cta root start */
+    --cta-img: url(/asset/images/call-to-action/call.png);
+    --cta-overlay: linear-gradient(to right, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.433));
+    --cta-height-lg: 500px;
+    --cta-height-md: 450px;
+    --cta-height-sm: 350px;
+    --cta-height-xs: 250px;
+    --cta-font-xl: 6.5rem;
+    --cta-font-lg: 5rem;
+    --cta-font-md: 4rem;
+    --cta-font-sm: 3rem;
+    --cta-font-xs: 2.6rem;
+    --cta-font-xxs: 2.5rem;
+    --cta-shadow: 0px 0px 17.09px rgba(0, 0, 0, 0.399);
+    /* cta root end */
+
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.montagu-slab {
+  font-family: "Montagu Slab", serif;
+}
+
+.sail {
+  font-family: "Sail", system-ui;
+}
+
+html.dark body {
+  background: black !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.montagu-slab {
+  font-family: "Montagu Slab", serif;
+}

@@ -1,0 +1,68 @@
+ #slider-section .dominion-slider {
+     width: 100%;
+     aspect-ratio: 16/9;
+ }
+
+ #slider-section .dominion-slider .slider-image-wrapper {
+     width: 100%;
+     height: 100%;
+     background-image: var(--slider-pc-image);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .custom-nav {
+     width: 45px;
+     height: 45px;
+     border: 2px solid white;
+     color: white;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: var(--box-shadow, 0 0 10px rgba(0, 0, 0, 0.2));
+     transition: all 0.3s ease;
+     z-index: 10;
+     opacity: .4;
+ }
+
+ .custom-nav::after {
+     font-size: 20px;
+     font-weight: bold;
+
+ }
+
+ .custom-nav:hover {
+     opacity: 1;
+ }
+
+
+
+ .swiper-pagination-bullet {
+     background-color: rgb(255, 255, 255);
+     opacity: 0.3;
+     width: 10px;
+     height: 10px;
+     margin: 0 3px !important;
+     border-radius: 50%;
+     transition: opacity 0.3s ease;
+ }
+
+
+ .swiper-pagination-bullet-active {
+     opacity: 1;
+ }
+
+ @media (max-width: 600px) {
+     #slider-section .dominion-slider .slider-image-wrapper {
+         background-image: var(--slider-mob-image);
+         background-position: center;
+
+     }
+
+     #slider-section .dominion-slider {
+         height: 100vh !important;
+         aspect-ratio: auto !important;
+     }
+ }

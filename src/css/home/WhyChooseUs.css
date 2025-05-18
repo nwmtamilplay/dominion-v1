@@ -1,0 +1,18 @@
+ #why-choose-us .why-choose-content-wrapper p {
+     font-size: 12px;
+     font-weight: 500;
+ }
+
+ #why-choose-us .why-choose-content-wrapper .why-choose-icon {
+     width: 50px;
+     aspect-ratio: 1/1;
+     background-color: var(--tab-border-active);
+     -webkit-mask-image: var(--why-icon);
+     -webkit-mask-position: center top;
+     -webkit-mask-repeat: no-repeat;
+     -webkit-mask-size: contain;
+     mask-image: var(--why-icon);
+     mask-position: center top;
+     mask-repeat: no-repeat;
+     mask-size: contain;
+ }

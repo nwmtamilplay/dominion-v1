@@ -1,0 +1,240 @@
+
+
+.grid {
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: 1.2fr 1fr 0.7fr 1fr;
+}
+
+.grid>div {
+    position: relative;
+    min-height: 300px;
+    background-image: var(--offer-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer-image-content {
+    color: #fff;
+}
+
+.offer-image-content h5 {
+    color: var(--clr-h5);
+}
+
+.offer-image-content h4 {
+    color: var(--clr-h4);
+}
+
+.offer-image-content a {
+    color: var(--clr-link);
+    border-bottom: 2px solid var(--clr-link);
+    text-decoration: none;
+    width: max-content;
+    transition: .4s;
+}
+
+.offer-image-content a:hover {
+    color: var(--clr-link-hover);
+    border-bottom: 2px solid var(--clr-link-hover);
+}
+
+.grid>div:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 2;
+    overflow: hidden;
+}
+
+.grid>div:nth-child(1) .offer-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-inline: 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: var(--clr-tag-bg);
+    color: var(--clr-tag-text);
+    transform: rotate(-45deg) translate(-30%, -30%);
+    transition: .4s;
+}
+
+.grid>div:nth-child(1):hover .offer-tag {
+    background-color: var(--clr-link-hover);
+}
+
+.grid>div:nth-child(1) .offer-tag p {
+    font-size: 10px;
+    line-height: 0;
+}
+
+.grid>div:nth-child(4) {
+    z-index: 4;
+    isolation: isolate;
+}
+
+.grid>div:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    height: 90%;
+    aspect-ratio: 1;
+    background: url(/asset/images/dress/hoody-3.png) center / contain no-repeat;
+    z-index: -1;
+    transition: .4s;
+}
+
+.grid>div:nth-child(4):hover::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    height: 100%;
+    aspect-ratio: 1;
+    background: url(/asset/images/dress/hoody-3.png) center / contain no-repeat;
+    z-index: -1;
+}
+
+.grid>div:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 4;
+    background-position: right -40% top, center;
+    background-size: auto 130%, 110% !important;
+    transition: .4s;
+}
+
+.grid>div:nth-child(2):hover {
+    background-position: right -20% top, right;
+    background-size: auto 140%, 130% !important;
+}
+
+.grid>div:nth-child(5) {
+    grid-area: 2 / 3 / 3 / 5;
+    background-position: right -10px bottom, center;
+    background-size: auto 85%, 110% !important;
+    transition: .4s;
+}
+
+
+.grid>div:nth-child(5):hover {
+    background-position: right -10px bottom, center;
+    background-size: auto 100%, 150% !important;
+}
+
+/* Media Queries */
+@media (width < 1300px) {
+    .grid>div {
+        min-height: 250px;
+    }
+}
+
+@media (width < 1100px) {
+    .grid>div {
+        min-height: 225px;
+    }
+
+    .grid>div:nth-child(1) h1 {
+        font-size: 30px;
+    }
+
+    .grid>div:nth-child(1) h5 {
+        font-size: 18px;
+    }
+}
+
+@media (width < 990px) {
+    .grid>div {
+        min-height: 175px;
+    }
+
+    .grid>div:nth-child(1) h1 {
+        font-size: 20px;
+    }
+
+    .grid>div:nth-child(1) h5 {
+        font-size: 14px;
+    }
+
+    .grid>div h1 {
+        font-size: 20px;
+    }
+
+    .grid>div h4 {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (width < 768px) {
+    .grid {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 10px;
+    }
+
+    .grid>div {
+        min-height: 200px;
+    }
+
+    .offer-image-content a {
+        font-size: 14px;
+    }
+
+    .grid>div:nth-child(1) {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .grid>div:nth-child(3) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .grid>div:nth-child(4) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .grid>div:nth-child(2) {
+        grid-area: 3 / 1 / 4 / 3;
+        background-position: right -20% top, center;
+    }
+
+    .grid>div:nth-child(5) {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+
+    .grid>div:nth-child(1) h1 {
+        font-size: 23px;
+    }
+
+    .grid>div:nth-child(1) h5 {
+        font-size: 14px;
+    }
+}
+
+@media (width < 500px) {
+    .grid>div {
+        min-height: 160px;
+    }
+
+}
+
+@media (width < 370px) {
+    .grid>div {
+        min-height: 150px;
+    }
+
+    .grid>div:nth-child(1) h1 {
+        font-size: 20px;
+    }
+
+    .grid>div:nth-child(1) h5 {
+        font-size: 12px;
+    }
+
+    .grid>div:nth-child(4) h1 {
+        font-size: 20px;
+    }
+
+    .offer-image-content a {
+        font-size: 13px;
+    }
+}

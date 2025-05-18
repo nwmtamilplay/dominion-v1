@@ -1,0 +1,93 @@
+ #call-to-action {
+            background-image: var(--cta-img);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: var(--cta-height-lg);
+        }
+
+        #call-to-action .call-to-btn {
+            width: max-content;
+            padding: 10px 30px;
+            color: var(--btn-hover-text);
+            background-color: var(--offer-bg);
+            text-decoration: none;
+            border-radius: 100vh;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        #call-to-action .call-to-wrapper h2 {
+            font-size: var(--cta-font-xl);
+            color: var(--clr-tag-text);
+            text-shadow: var(--cta-shadow);
+        }
+
+        #call-to-action .call-to-wrapper h2:nth-child(2) {
+            transform: translateX(30%);
+        }
+
+        @media (width < 1300px) {
+            #call-to-action {
+                height: var(--cta-height-md);
+            }
+
+            #call-to-action .call-to-wrapper h2 {
+                font-size: var(--cta-font-lg);
+            }
+        }
+
+        @media (width < 1100px) {
+            #call-to-action {
+                height: var(--cta-height-sm);
+            }
+
+            #call-to-action .call-to-wrapper h2 {
+                font-size: var(--cta-font-md);
+            }
+        }
+
+        @media (width < 1000px) {
+            #call-to-action {
+                height: var(--cta-height-xs);
+            }
+
+            #call-to-action .call-to-wrapper h2 {
+                font-size: var(--cta-font-sm);
+            }
+
+            #call-to-action .call-to-wrapper h2:nth-child(2) {
+                transform: translateX(20%);
+            }
+
+            #call-to-action .call-to-btn {
+                padding: 5px 20px;
+            }
+        }
+
+        @media (width < 600px) {
+            #call-to-action {
+                background-image: var(--cta-overlay), var(--cta-img);
+                background-position: left top;
+            }
+
+            #call-to-action .call-to-wrapper h2 {
+                font-size: var(--cta-font-xs);
+                color: var(--btn-hover-text);
+            }
+
+            #call-to-action .call-to-btn {
+                padding: 5px 20px;
+            }
+        }
+
+        @media (width < 370px) {
+            #call-to-action .call-to-wrapper h2 {
+                font-size: var(--cta-font-xxs);
+                color: var(--btn-hover-text);
+            }
+
+            #call-to-action .call-to-wrapper h2:nth-child(2) {
+                transform: translateX(10%);
+            }
+        }
