@@ -12,7 +12,7 @@ const OfferSection = () => {
           <div className="box-wrapper flex poppins">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div
-                className="flex flex-col items-center justify-end pb-5 bg-cover bg-center"
+                className="flex flex-col items-center justify-end pb-10 bg-cover bg-center"
                 style={{ '--offer-bg': 'url(/asset/images/dress/OF-1.png)' }}
               >
                 <div className="offer-tag font-bold flex flex-col justify-center items-center pt-2">
@@ -28,7 +28,7 @@ const OfferSection = () => {
                 </div>
               </div>
               <div
-                className="flex flex-col pt-4 ps-4 bg-cover bg-center"
+                className="flex flex-col pt-8 ps-8 bg-cover bg-center"
                 style={{ '--offer-bg': 'url(/asset/images/dress/d-3.png), url(/asset/images/dress/of-2.png)' }}
               >
                 <div className="offer-image-content flex flex-col gap-2">
@@ -44,7 +44,7 @@ const OfferSection = () => {
                 style={{ '--offer-bg': 'url(/asset/images/dress/of-4.png)' }}
               ></div>
               <div
-                className="flex flex-col pt-4 ps-3 md:ps-4 bg-cover bg-center"
+                className="flex flex-col pt-8 ps-6 md:ps-4 bg-cover bg-center"
                 style={{ '--offer-bg': 'url(/asset/images/dress/of-3.png)' }}
               >
                 <div className="offer-image-content flex flex-col gap-2">
@@ -57,7 +57,7 @@ const OfferSection = () => {
                 </div>
               </div>
               <div
-                className="flex items-center ps-4 bg-cover bg-center"
+                className="flex items-center ps-8 bg-cover bg-center"
                 style={{ '--offer-bg': 'url(/asset/images/dress/HOODY-2.png), url(/asset/images/dress/of-5.png)' }}
               >
                 <div className="offer-image-content flex flex-col gap-2">
