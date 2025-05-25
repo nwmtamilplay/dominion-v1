@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <style>
+        :root {
+            --hover-bg-light: rgba(208, 205, 205, 0.312);
+            --text-primary: #63005E;
+            --text-secondary: rgba(0, 0, 0, 0.717);
+            --tab-border-active: #FFAE00;
+            --tab-border-inactive: #ffae0000;
+            --btn-default-bg: #D1D1D1;
+            --btn-hover-bg: #001646;
+            --btn-hover-text: #FFF;
+            --star-color: url(asset/images/star.svg);
+            --heart-default: url(asset/images/heart.svg);
+            --cart-icon: url(asset/images/cart.svg);
+            --edit-icon: url(asset/images/edit.svg);
+            --heart-hover: #FF0E5A;
+            --color-heading-text: #004563;
+            --color-heading-bg: rgba(0, 69, 99, 0.16);
+            --color-border: #D1D1D1;
+            --box-shadow: 0 0 10px rgba(0, 0, 0, 0.244);
+            --box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* offer root start */
+            --offer-bg: #000;
+            --clr-tag-bg: #C4FF01;
+            --clr-tag-text: #000;
+            --clr-h5: #8B8585;
+            --clr-h4: #D0D0D0;
+            --clr-link: #C4FF01;
+            --clr-link-hover: #FFAE00;
+            /* offer root end */
+            /* cta root start */
+            --cta-img: url(asset/images/call-to-action/call.png);
+            --cta-overlay: linear-gradient(to right, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.433));
+            --cta-height-lg: 500px;
+            --cta-height-md: 450px;
+            --cta-height-sm: 350px;
+            --cta-height-xs: 250px;
+            --cta-font-xl: 6.5rem;
+            --cta-font-lg: 5rem;
+            --cta-font-md: 4rem;
+            --cta-font-sm: 3rem;
+            --cta-font-xs: 2.6rem;
+            --cta-font-xxs: 2.5rem;
+            --cta-shadow: 0px 0px 17.09px rgba(0, 0, 0, 0.399);
+            /* cta root end */
+
+
+        }
+
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .montagu-slab {
+            font-family: "Montagu Slab", serif;
+        }
+
+        .sail {
+            font-family: "Sail", system-ui;
+        }
+
+        .Poltawski-Nowy {
+            font-family: "Poltawski Nowy", serif;
+        }
+    </style>
+
+    <style>
+        /* product-section start */
+        :root {
+            --text-light: white;
+            --bg-white: white;
+        }
+
+        #customize-product {
+            background-color: #1D2532;
+        }
+
+
+        /* product-section end*/
+    </style>
+    <style>
+        #customize-product .product-image-wrapper-section {
+            --bg-custom-clr: rgb(255, 255, 255);
+            /* background-color: red; */
+            width: 100%;
+            aspect-ratio: 1/.8;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.129);
+            border-radius: 15px;
+        }
+
+        #customize-product .product-image-wrapper-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            filter: invert();
+            background-color: var(--bg-custom-clr);
+            border-radius: inherit;
+            display: var(--bg-clr-decide);
+        }
+
+        #customize-product .product-image-wrapper {
+            position: absolute;
+            inset: 0;
+            mask-image: var(--bg-product-bg);
+            mask-position: center bottom;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            background-color: var(--bg-custom-clr);
+
+        }
+
+        #customize-product .product-image-wrapper .custom-text-for-blend {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            font-size: 50px;
+            font-weight: bolder;
+            color: red;
+
+        }
+
+        #customize-product .product-image-wrapper::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgb(0, 0, 0);
+            background-image: var(--bg-product-bg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            mix-blend-mode: multiply;
+            z-index: 9;
+        }
+
+
+        #customize-product .product-image .product-image-thumbnail {
+            right: 10px;
+            top: 10px;
+        }
+
+        #customize-product .product-image .product-image-thumbnail .preview-image {
+            width: 55px;
+            aspect-ratio: 1/.8;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.429);
+            border-radius: 5px;
+            background-color: white;
+            background-image: var(--bg-preview-bg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+
+
+        #customize-product .product-image .hide-bg-btn {
+            width: max-content;
+            padding: 2px 20px 2px 38px;
+            color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            right: 10px;
+            transform: translateY(-150%);
+            border-radius: 100vh;
+            font-size: 10px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            border: none;
+            outline: none;
+            z-index: 2;
+        }
+
+        #customize-product .product-image .hide-bg-btn .eye-icon {
+            width: 14px;
+            height: 14px;
+            background-color: rgba(255, 255, 255, 0.5);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            transition: background 0.2s;
+        }
+
+        #customize-product .product-image .hide-bg-btn .eye-icon {
+            mask-image: url(asset/images/products-section/eye-open.svg);
+        }
+
+        #customize-product .custom-text-button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            /* position: absolute; */
+            left: 10px;
+            border-radius: 100vh;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.457);
+            cursor: pointer;
+        }
+
+        #customize-product .custom-text-button.active {
+            display: none !important;
+        }
+    </style>
+    <style>
+        :root {
+            --fc-bg: #23232300;
+            --fc-text: #ffffff;
+            --fc-border: #d1d1d1;
+            --fc-muted: #888888;
+            --fc-hover: #eaeaea;
+            --fc-btn-bg: #ffffff;
+            --fc-btn-hover: #eaeaea;
+            --fc-btn-icon: #000000;
+            --fc-padding-lg: 40px;
+            --fc-padding-sm: 12px;
+            --fc-height: 45px;
+            --fc-radius: 25px;
+        }
+
+
+        .font-customizer-bar-tab-section {
+            display: none;
+            position: relative;
+        }
+
+        .font-customizer-bar-tab-section .close-custom-btn-text {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            filter: drop-shadow(0 0 1px #ffffff);
+            width: 24px;
+            aspect-ratio: 1 / 1;
+            border-radius: 4px;
+            background-image: url(asset/images/products-section/close.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: filter 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            z-index: 9;
+        }
+
+
+        .font-customizer-bar-tab-section .tabs .add-custom-text {
+            width: 24px;
+            aspect-ratio: 1 / 1;
+            border-radius: 4px;
+            background-image: url(asset/images/products-section/add.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: filter 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .font-customizer-bar-tab-section.active {
+            display: block;
+        }
+
+        .font-customizer-label {
+            color: var(--fc-muted);
+            margin-bottom: 12px;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+
+        .font-customizer-bar {
+            display: flex;
+            align-items: stretch;
+            border: 2px solid var(--fc-border);
+            border-radius: var(--fc-radius);
+            overflow: hidden;
+            background: var(--fc-bg);
+            max-width: 100%;
+            height: var(--fc-height);
+        }
+
+
+
+        .font-customizer-select,
+        .font-customizer-input {
+            background: var(--fc-bg);
+            color: var(--fc-text);
+            border: none;
+            outline: none;
+        }
+
+        .font-customizer-select {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0 24px 0 18px;
+            border-right: 2px solid var(--fc-border);
+            border-radius: var(--fc-radius) 0 0 var(--fc-radius);
+            min-width: 170px;
+            appearance: none;
+        }
+
+        .font-customizer-select option {
+            color: black;
+        }
+
+        .font-customizer-input {
+            flex: 1;
+            font-size: 12px;
+            padding: 0 16px;
+            font-weight: 600;
+        }
+
+        .font-customizer-btn {
+            background: var(--fc-btn-bg);
+            border: none;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 var(--fc-radius) var(--fc-radius) 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            padding: 0;
+        }
+
+        .font-customizer-btn-click {
+            height: 70%;
+            aspect-ratio: 1/1;
+            background-color: rgb(0, 0, 0);
+            mask-image: url(asset/images/products-section/click.svg);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        }
+
+        .font-customizer-btn:hover {
+            background: var(--fc-btn-hover);
+        }
+
+        @media (max-width: 700px) {
+            .font-customizer-bar {
+                max-width: 100%;
+            }
+
+            .font-customizer-container {
+                padding: 24px 0 0 var(--fc-padding-sm);
+            }
+        }
+    </style>
+    <section id="customize-product" class="container-fluid py-5 my-5">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-6 px-5">
+                    <div class="product-image-wrapper-section position-relative">
+                        <div class="product-image-wrapper" style="--bg-product-bg:url(asset/images/dress/d-3.png);">
+                        </div>
+                        <div class="product-image position-relative w-100 h-100">
+                            <div class="product-image-thumbnail position-absolute d-flex flex-column gap-2">
+                                <div class="preview-one preview-image"
+                                    style="--bg-preview-bg:url(asset/images/dress/d-3.png);"></div>
+                                <div class="preview-two preview-image"
+                                    style="--bg-preview-bg:url(asset/images/dress/d-3.png);"></div>
+
+                            </div>
+                            <div
+                                class="hide-bg-btn poppins d-flex align-items-center justify-content-center gap-1 open">
+                                Hide
+                                Background
+                                <div class="eye-icon"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="custom-text-button poppins mt-3 d-flex align-items-center justify-content-center">
+                        CUSTOM
+                        TEXT</div>
+                    <div class="font-customizer-bar-tab-section mt-4 ">
+                        <div class="close-custom-btn-text"></div>
+                        <div class="tabs d-flex gap-4 justify-content-center position-relative" id="tablist">
+                            <div class="d-flex justify-content-center custom-text-tabs-wrapper">
+
+                            </div>
+                            <div class="add-custom-text"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 mt-5">
+                    <div class="custom-text-edit-wrapper">
+                        <style>
+                            .custom-edit-controls {
+                                background: linear-gradient(135deg, #1d2532 60%, #63005e40 100%);
+                                border-radius: 22px;
+                                padding: 28px 28px 24px 28px;
+                                box-shadow: 0 8px 40px 0 rgba(99, 0, 94, 0.18), 0 1.5px 8px 0 rgba(255, 174, 0, 0.08);
+                                margin-bottom: 32px;
+                                border: 1.5px solid #ffae00;
+                                position: relative;
+                                overflow: hidden;
+                            }
+
+                            .custom-edit-controls .custom-label {
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 16px;
+                                color: #fff;
+                                font-weight: 600;
+                                letter-spacing: 0.5px;
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                            }
+
+                            .custom-edit-controls .custom-icon {
+                                width: 22px;
+                                height: 22px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                filter: drop-shadow(0 0 2px #ffae00cc);
+                            }
+
+                            .custom-edit-controls .custom-slider {
+                                width: 100%;
+                                accent-color: #FFAE00;
+                                margin-bottom: 8px;
+                                height: 4px;
+                                border-radius: 2px;
+                                background: linear-gradient(90deg, #ffae00 0%, #63005e 100%);
+                                box-shadow: 0 1px 4px #ffae0033;
+                            }
+
+                            .custom-edit-controls .custom-value {
+                                font-family: 'Montagu Slab', serif;
+                                color: #FFAE00;
+                                font-size: 18px;
+                                min-width: 48px;
+                                display: inline-block;
+                                margin-left: 10px;
+                                letter-spacing: 0.5px;
+                                text-shadow: 0 1px 4px #00000044;
+                            }
+
+                            .custom-edit-controls .row {
+                                margin-bottom: 10px;
+                            }
+
+                            .custom-edit-controls:after {
+                                content: "";
+                                position: absolute;
+                                inset: 0;
+                                border-radius: 22px;
+                                pointer-events: none;
+                                box-shadow: 0 0 0 4px #ffae0040, 0 0 32px 0 #ffae0033;
+                                z-index: 1;
+                            }
+
+                            .custom-reset-btn,
+                            .custom-reset-btn-single {
+                                width: 32px;
+                                height: 32px;
+                                background-color: transparent;
+                                border-radius: 50%;
+                                border: none;
+                                box-shadow: 0 2px 8px #ffae0033;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                z-index: 2;
+                                transition: background 0.2s;
+                                padding: 0;
+                            }
+
+                            .custom-reset-btn:hover,
+                            .custom-reset-btn-single:hover {
+                                background: #ffe6b3;
+                            }
+
+                            .custom-reset-btn .reset-icon,
+                            .custom-reset-btn-single .reset-icon {
+                                width: 22px;
+                                height: 22px;
+                                background-color: white;
+                                mask-image: url(asset/images/products-section/reset.svg);
+                                mask-size: contain;
+                                mask-repeat: no-repeat;
+                                mask-position: center;
+                                display: block;
+                            }
+
+                            .custom-reset-btn:hover .reset-icon,
+                            .custom-reset-btn-single:hover .reset-icon {
+                                background-color: rgb(0, 0, 0);
+
+                            }
+
+                            .custom-reset-btn-single {
+                                width: 28px;
+                                height: 28px;
+                                box-shadow: none;
+                                margin-left: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+                            .custom-reset-btn-single .reset-icon {
+                                width: 16px;
+                                height: 16px;
+                            }
+
+                            .custom-edit-controls .custom-label {
+                                position: relative;
+                            }
+
+                            .custom-edit-controls .custom-label .custom-reset-btn-single {
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                margin-left: 0;
+                            }
+
+                            .custom-edit-controls .custom-label .custom-icon {
+                                margin-right: 8px;
+                            }
+
+                            /* Move the main reset button to the top right */
+                            .custom-reset-btn {
+                                position: absolute;
+                                top: 18px;
+                                right: 18px;
+                            }
+
+                            @media (max-width: 900px) {
+                                .custom-edit-controls {
+                                    padding: 18px 8px 14px 8px;
+                                }
+
+                                .custom-edit-controls .custom-label {
+                                    font-size: 14px;
+                                }
+
+                                .custom-edit-controls .custom-value {
+                                    font-size: 15px;
+                                }
+
+                                .custom-reset-btn {
+                                    top: 8px;
+                                    right: 8px;
+                                    width: 28px;
+                                    height: 28px;
+                                }
+
+                                .custom-reset-btn .reset-icon {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+
+                                .custom-reset-btn-single {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+
+                                .custom-reset-btn-single .reset-icon {
+                                    width: 13px;
+                                    height: 13px;
+                                }
+                            }
+                        </style>
+                        <div class="custom-edit-controls position-relative" style="z-index:2;">
+                            <button class="custom-reset-btn" type="button" title="Reset All">
+                                <span class="reset-icon"></span>
+                            </button>
+                            <h4 class="m-0 montagu-slab fw-bold  mb-3 text-white">CUSTOMIZED TEXT </h4>
+                            <div class="row ">
+                                <div class="col-6">
+                                    <div>
+                                        <div class="custom-label" style="padding-right:40px;">
+                                            <div class="custom-icon"
+                                                style="background-image:url(asset/images/products-section/font.svg);">
+                                            </div>
+                                            Font Size
+                                            <button class="custom-reset-btn-single" type="button"
+                                                title="Reset Font Size" id="reset-font-size">
+                                                <span class="reset-icon"></span>
+                                            </button>
+                                        </div>
+                                        <input type="range" id="font-size-range" min="20" max="300" value="20"
+                                            class="custom-slider">
+                                        <span id="font-size-value" class="custom-value">20px</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <div class="custom-label" style="padding-right:40px;">
+                                            <div class="custom-icon"
+                                                style="background-image:url(asset/images/products-section/rotate.svg);">
+                                            </div>
+                                            Rotate
+                                            <button class="custom-reset-btn-single" type="button" title="Reset Rotate"
+                                                id="reset-rotate">
+                                                <span class="reset-icon"></span>
+                                            </button>
+                                        </div>
+                                        <input type="range" id="rotate-range" min="-180" max="180" value="0"
+                                            class="custom-slider">
+                                        <span id="rotate-value" class="custom-value">0°</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <div>
+                                        <div class="custom-label" style="padding-right:40px;">
+                                            <div class="custom-icon"
+                                                style="background-image:url(asset/images/products-section/move.svg);">
+                                            </div>
+                                            Translate X
+                                            <button class="custom-reset-btn-single" type="button" title="Reset X"
+                                                id="reset-translate-x">
+                                                <span class="reset-icon"></span>
+                                            </button>
+                                        </div>
+                                        <input type="range" id="translate-x-range" min="-200" max="200" value="0"
+                                            class="custom-slider">
+                                        <span id="translate-x-value" class="custom-value">0px</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <div class="custom-label" style="padding-right:40px;">
+                                            <div class="custom-icon"
+                                                style="background-image:url(asset/images/products-section/move.svg);">
+                                            </div>
+                                            Translate Y
+                                            <button class="custom-reset-btn-single" type="button" title="Reset Y"
+                                                id="reset-translate-y">
+                                                <span class="reset-icon"></span>
+                                            </button>
+                                        </div>
+                                        <input type="range" id="translate-y-range" min="-200" max="200" value="0"
+                                            class="custom-slider">
+                                        <span id="translate-y-value" class="custom-value">0px</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <style>
+                                .custom-color-swatch {
+                                    width: 24px;
+                                    height: 24px;
+                                    background-color: var(--custom-clr-offer);
+                                    border: 2px solid #ffffff;
+                                    border-radius: 50%;
+                                }
+                            </style>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="custom-label mb-2" style="padding-right:40px;">
+                                        <div class="custom-icon"
+                                            style="background-image:url(asset/images/products-section/color.svg);">
+                                        </div>
+                                        Text Color
+                                        <div class="custom-label-color-offer-wrapper d-flex align-items-center">
+                                            <div class="custom-color-swatch" style="--custom-clr-offer:#ff0000;"></div>
+                                            <button class="custom-reset-btn-single" type="button" title="Reset Color"
+                                                id="reset-color">
+                                                <span class="reset-icon"></span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <input type="color" id="custom-text-color" value="#ff0000"
+                                        style="width: 48px; height: 48px; border: none; background: none; cursor: pointer; border-radius: 8px; box-shadow: 0 1px 8px #0002;">
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            // Font size
+                            const fontSizeRange = document.getElementById('font-size-range');
+                            const fontSizeValue = document.getElementById('font-size-value');
+                            fontSizeRange.addEventListener('input', function () {
+                                fontSizeValue.textContent = this.value + 'px';
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) customText.style.fontSize = this.value + 'px';
+                            });
+                            document.getElementById('reset-font-size').addEventListener('click', function () {
+                                fontSizeRange.value = 20;
+                                fontSizeValue.textContent = '20px';
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) customText.style.fontSize = '20px';
+                            });
+
+                            // Rotate
+                            const rotateRange = document.getElementById('rotate-range');
+                            const rotateValue = document.getElementById('rotate-value');
+                            rotateRange.addEventListener('input', function () {
+                                rotateValue.textContent = this.value + '°';
+                                updateTransform();
+                            });
+                            document.getElementById('reset-rotate').addEventListener('click', function () {
+                                rotateRange.value = 0;
+                                rotateValue.textContent = '0°';
+                                updateTransform();
+                            });
+
+                            // Translate X/Y
+                            const translateXRange = document.getElementById('translate-x-range');
+                            const translateYRange = document.getElementById('translate-y-range');
+                            const translateXValue = document.getElementById('translate-x-value');
+                            const translateYValue = document.getElementById('translate-y-value');
+                            function updateTransform() {
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) {
+                                    const x = translateXRange.value;
+                                    const y = translateYRange.value;
+                                    const rotate = rotateRange.value || 0;
+                                    customText.style.transform = `translate(${x}px, ${y}px) rotate(${rotate}deg)`;
+                                }
+                            }
+                            translateXRange.addEventListener('input', function () {
+                                translateXValue.textContent = this.value + 'px';
+                                updateTransform();
+                            });
+                            translateYRange.addEventListener('input', function () {
+                                translateYValue.textContent = this.value + 'px';
+                                updateTransform();
+                            });
+                            document.getElementById('reset-translate-x').addEventListener('click', function () {
+                                translateXRange.value = 0;
+                                translateXValue.textContent = '0px';
+                                updateTransform();
+                            });
+                            document.getElementById('reset-translate-y').addEventListener('click', function () {
+                                translateYRange.value = 0;
+                                translateYValue.textContent = '0px';
+                                updateTransform();
+                            });
+
+                            // Color
+                            const colorPicker = document.getElementById('custom-text-color');
+                            colorPicker.addEventListener('input', function () {
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) customText.style.color = this.value;
+                            });
+                            document.getElementById('reset-color').addEventListener('click', function () {
+                                colorPicker.value = '#ff0000';
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) customText.style.color = '#ff0000';
+                            });
+
+                            // Reset all
+                            document.querySelector('.custom-reset-btn').addEventListener('click', function () {
+                                // Reset font size
+                                fontSizeRange.value = 20;
+                                fontSizeValue.textContent = '20px';
+                                // Reset rotate
+                                rotateRange.value = 0;
+                                rotateValue.textContent = '0°';
+                                // Reset translate
+                                translateXRange.value = 0;
+                                translateYRange.value = 0;
+                                translateXValue.textContent = '0px';
+                                translateYValue.textContent = '0px';
+                                // Reset color
+                                colorPicker.value = '#ff0000';
+                                // Reset custom text style
+                                const customText = document.querySelector('.custom-text-for-blend');
+                                if (customText) {
+                                    customText.style.fontSize = '20px';
+                                    customText.style.transform = 'translate(0px, 0px) rotate(0deg)';
+                                    customText.style.color = '#ff0000';
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const productImageWrapperSection = document.querySelector('.product-image-wrapper-section');
+        const hideBgBtn = document.querySelector('.hide-bg-btn');
+        const customTabsWrapper = document.querySelector('.custom-text-tabs-wrapper');
+
+        hideBgBtn.addEventListener('click', () => {
+            hideBgBtn.classList.toggle('active');
+            if (hideBgBtn.classList.contains('active')) {
+                productImageWrapperSection.style.setProperty('--bg-clr-decide', 'none');
+                hideBgBtn.querySelector('.eye-icon').style.setProperty('mask-image', 'url(asset/images/products-section/eye-close.svg)');
+            } else {
+                productImageWrapperSection.style.setProperty('--bg-clr-decide', 'block');
+                hideBgBtn.querySelector('.eye-icon').style.setProperty('mask-image', 'url(asset/images/products-section/eye-open.svg)');
+            }
+        })
+        createCustomTextInput();
+
+        function createCustomTextInput() {
+            // Elements
+
+            const fontCustomizerTab = document.querySelector('.font-customizer-bar-tab-section');
+            const customTextWrapper = document.querySelector('.custom-text-button');
+            const customTextCloseBtn = document.querySelector('.close-custom-btn-text');
+            const productImageWrapper = document.querySelector('.product-image-wrapper');
+
+            // Show/hide customizer
+            customTextWrapper.addEventListener('click', () => {
+                fontCustomizerTab.classList.add('active');
+                customTextWrapper.classList.add('active');
+            });
+            customTextCloseBtn.addEventListener('click', () => {
+                fontCustomizerTab.classList.remove('active');
+                customTextWrapper.classList.remove('active');
+            });
+
+            // Create custom text element
+            const customText = document.createElement('div');
+            customText.classList.add('custom-text-for-blend', 'poppins');
+            customText.textContent = 'DOMINION';
+            productImageWrapper.appendChild(customText);
+
+            // Create tab
+            const tab = document.createElement('div');
+            tab.classList.add('tab', 'tab-customize-tab', 'active');
+            tab.setAttribute('style', '--cus-icon-tab:url(asset/images/products-section/text.svg);');
+            tab.setAttribute('data-tab', `tab1}`);
+            customTabsWrapper.append(tab);
+
+            // Create tab content
+            const tabContent = document.createElement('div');
+            tabContent.classList.add('tab-content', 'active');
+            tabContent.setAttribute('data-content', `tab1}`);
+
+            // Create font customizer container
+            const fontCustomizerContainer = document.createElement('div');
+            fontCustomizerContainer.classList.add('font-customizer-container');
+
+            // Create form
+            const form = document.createElement('form');
+            form.classList.add('font-customizer-bar');
+            form.setAttribute('autocomplete', 'off');
+
+            // Create select
+            const select = document.createElement('select');
+            select.classList.add('font-customizer-select', 'montagu-slab');
+            select.setAttribute('aria-label', 'Font Family');
+            [
+                { text: 'ALL FONTS FAMILY', value: 'all-fonts-family' },
+                { text: 'Montagu Slab', value: 'montagu-slab' },
+                { text: 'Poltawski Nowy', value: 'poltawski-nowy' },
+                { text: 'Poppins', value: 'poppins' },
+                { text: 'Sail', value: 'sail' }
+            ].forEach(opt => {
+                const option = document.createElement('option');
+                option.value = opt.value;
+                option.textContent = opt.text;
+                select.appendChild(option);
+            });
+
+            // Create input
+            const input = document.createElement('input');
+            input.classList.add('font-customizer-input', 'poppins');
+            input.id = 'custom-search';
+            input.type = 'text';
+            input.placeholder = 'Customize Text......';
+            input.setAttribute('aria-label', 'Custom Text');
+
+            // Create label/button
+            const label = document.createElement('label');
+            label.setAttribute('for', 'custom-search');
+            label.classList.add('font-customizer-btn', 'd-flex', 'justify-content-center', 'align-items-center');
+            const btnIcon = document.createElement('div');
+            btnIcon.classList.add('font-customizer-btn-click');
+            label.appendChild(btnIcon);
+
+            // Assemble form
+            form.appendChild(select);
+            form.appendChild(input);
+            form.appendChild(label);
+
+            // Assemble container
+            fontCustomizerContainer.appendChild(form);
+            tabContent.appendChild(fontCustomizerContainer);
+            fontCustomizerTab.appendChild(tabContent);
+
+            // Update text and font
+            function updateCustomText() {
+                const fontValue = select.value;
+                const value = input.value.trim();
+                customText.className = "";
+                customText.classList.add('custom-text-for-blend');
+                customText.classList.add(fontValue === 'all-fonts-family' ? 'poppins' : fontValue);
+                customText.textContent = value ? value : 'DOMINION';
+            }
+            input.addEventListener('input', updateCustomText);
+            select.addEventListener('change', updateCustomText);
+
+            // Tab switching (if more tabs are added in future)
+            document.getElementById('tablist').addEventListener('click', function (e) {
+                if (e.target.classList.contains('tab')) {
+                    const tabValue = e.target.getAttribute('data-tab');
+                    document.querySelectorAll('.tab').forEach(tab => {
+                        tab.classList.toggle('active', tab === e.target);
+                    });
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.toggle('active', content.getAttribute('data-content') === tabValue);
+                    });
+                }
+            });
+
+        }
+
+
+
+
+
+    </script>
+    <div style="height: 500px;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!-- input start -->
+
+
+
+
+    <!-- input end -->
+</body>
+
+</html>

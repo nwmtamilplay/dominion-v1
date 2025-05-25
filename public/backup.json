@@ -1,0 +1,25 @@
+{
+    "public": {
+        "sliderBanner": {
+            "desktop": [
+                "/uploads/slider-1.jpg",
+                "/uploads/slider-1.jpg",
+                "/uploads/slider-1.jpg"
+            ],
+            "mobile": [
+                "/uploads/slider-mob-1.jpg",
+                "/uploads/slider-mob-1.jpg",
+                "/uploads/slider-mob-1.jpg"
+            ]
+        },
+        "popularProducts": [
+            "product_id_1",
+            "product_id_2",
+            "product_id_3"
+        ],
+        "Offers": [
+            "offer_id_1",
+            "offer_id_2"
+        ]
+    }
+}

@@ -1,0 +1,1637 @@
+[
+    {
+        "id": "product_1",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "discountPrice": 180,
+        "returnPolicy": "30-day return policy.",
+        "name": "Blacky Halls",
+        "price": 250,
+        "tags": [
+            "winter",
+            "casual",
+            "unisex"
+        ],
+        "description": "Premium quality hoodie with soft fleece lining, perfect for all seasons. Comfortable fit and stylish design.",
+        "images": [
+            "/images/hoodie_orange_front.png",
+            "/images/hoodie_orange_back.png",
+            "/images/hoodie_orange_side.png"
+        ],
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "3-5"
+        },
+        "type": "hoodie",
+        "createdAt": "2024-06-01T10:00:00Z",
+        "rating": 4.5,
+        "stock": {
+            "S": 10,
+            "XXL": 5,
+            "M": 15,
+            "XL": 8,
+            "L": 20
+        },
+        "brand": "Dominion",
+        "currency": "INR",
+        "reviewCount": 128,
+        "availableColors": [
+            {
+                "name": "Orange",
+                "hex": "#FF9900"
+            },
+            {
+                "hex": "#800080",
+                "name": "Purple"
+            },
+            {
+                "hex": "#008000",
+                "name": "Green"
+            },
+            {
+                "hex": "#FFD700",
+                "name": "Yellow"
+            },
+            {
+                "hex": "#00BFC8",
+                "name": "Teal"
+            }
+        ],
+        "reviews": [
+            {
+                "date": "2024-06-10",
+                "rating": 5,
+                "comment": "Very comfortable and stylish. Loved the color!",
+                "user": "Amit Kumar"
+            },
+            {
+                "rating": 4,
+                "user": "Priya Singh",
+                "comment": "Good quality but size runs a bit large.",
+                "date": "2024-06-08"
+            }
+        ]
+    },
+    {
+        "id": "product_10",
+        "type": "t-shirt",
+        "tags": [
+            "summer",
+            "lightweight"
+        ],
+        "price": 115,
+        "availableColors": [
+            {
+                "hex": "#FFD700",
+                "name": "Yellow"
+            },
+            {
+                "hex": "#FFFFFF",
+                "name": "White"
+            }
+        ],
+        "currency": "INR",
+        "reviewCount": 110,
+        "brand": "Dominion",
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": true
+        },
+        "reviews": [
+            {
+                "rating": 5,
+                "date": "2024-06-01",
+                "comment": "Perfect for hot days.",
+                "user": "Deepak Jain"
+            }
+        ],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "stock": {
+            "M": 28,
+            "L": 25,
+            "XL": 15,
+            "S": 22
+        },
+        "description": "Lightweight t-shirt for summer comfort.",
+        "returnPolicy": "15-day return policy.",
+        "name": "Summer Breeze Tee",
+        "createdAt": "2024-06-10T02:00:00Z",
+        "discountPrice": 95,
+        "images": [
+            "/images/tshirt_yellow_front.png",
+            "/images/tshirt_yellow_back.png"
+        ],
+        "rating": 4.5
+    },
+    {
+        "id": "product_11",
+        "brand": "Dominion",
+        "stock": {
+            "L": 14,
+            "XL": 8,
+            "M": 12,
+            "S": 10
+        },
+        "currency": "INR",
+        "delivery": {
+            "estimatedDays": "3-5",
+            "freeShipping": true
+        },
+        "description": "Retro style hoodie with bold color blocks.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "reviewCount": 60,
+        "images": [
+            "/images/hoodie_retro_front.png",
+            "/images/hoodie_retro_back.png"
+        ],
+        "returnPolicy": "30-day return policy.",
+        "price": 260,
+        "discountPrice": 200,
+        "type": "hoodie",
+        "rating": 4.3,
+        "availableColors": [
+            {
+                "name": "Blue",
+                "hex": "#0000FF"
+            },
+            {
+                "name": "Red",
+                "hex": "#FF0000"
+            }
+        ],
+        "tags": [
+            "retro",
+            "casual"
+        ],
+        "name": "Retro Hoodie",
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Neha Gupta",
+                "date": "2024-06-11",
+                "comment": "Love the retro look!"
+            }
+        ],
+        "createdAt": "2024-06-11T10:00:00Z"
+    },
+    {
+        "id": "product_12",
+        "brand": "Dominion",
+        "availableColors": [
+            {
+                "hex": "#000000",
+                "name": "Black"
+            },
+            {
+                "name": "White",
+                "hex": "#FFFFFF"
+            }
+        ],
+        "images": [
+            "/images/tshirt_bold_front.png",
+            "/images/tshirt_bold_back.png"
+        ],
+        "rating": 4.2,
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Rohit Sinha",
+                "date": "2024-06-12",
+                "comment": "Nice print and fit."
+            }
+        ],
+        "tags": [
+            "bold",
+            "casual"
+        ],
+        "description": "T-shirt with bold front print for a statement look.",
+        "discountPrice": 110,
+        "type": "t-shirt",
+        "stock": {
+            "S": 18,
+            "XL": 10,
+            "L": 22,
+            "M": 20
+        },
+        "createdAt": "2024-06-12T09:00:00Z",
+        "returnPolicy": "15-day return policy.",
+        "currency": "INR",
+        "reviewCount": 55,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "name": "Bold Print Tee",
+        "price": 140
+    },
+    {
+        "id": "product_13",
+        "createdAt": "2024-06-13T08:00:00Z",
+        "type": "cap",
+        "stock": {
+            "Free Size": 25
+        },
+        "name": "Mesh Sports Cap",
+        "description": "Breathable mesh cap for sports and outdoor activities.",
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": false
+        },
+        "reviewCount": 30,
+        "returnPolicy": "7-day return policy.",
+        "currency": "INR",
+        "price": 95,
+        "sizes": [
+            "Free Size"
+        ],
+        "images": [
+            "/images/cap_mesh_front.png",
+            "/images/cap_mesh_side.png"
+        ],
+        "brand": "Dominion",
+        "reviews": [
+            {
+                "comment": "Very comfortable for running.",
+                "user": "Asha Menon",
+                "rating": 4,
+                "date": "2024-06-13"
+            }
+        ],
+        "rating": 4.1,
+        "tags": [
+            "mesh",
+            "sport"
+        ],
+        "availableColors": [
+            {
+                "hex": "#808080",
+                "name": "Grey"
+            },
+            {
+                "hex": "#0000FF",
+                "name": "Blue"
+            }
+        ],
+        "discountPrice": 75
+    },
+    {
+        "id": "product_14",
+        "discountPrice": 210,
+        "createdAt": "2024-06-14T07:00:00Z",
+        "currency": "INR",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "tags": [
+            "zip",
+            "casual"
+        ],
+        "type": "hoodie",
+        "reviews": [
+            {
+                "rating": 5,
+                "comment": "Great quality zip and fabric.",
+                "date": "2024-06-14",
+                "user": "Manoj Kumar"
+            }
+        ],
+        "images": [
+            "/images/hoodie_zip_black_front.png",
+            "/images/hoodie_zip_black_back.png"
+        ],
+        "availableColors": [
+            {
+                "name": "Black",
+                "hex": "#000000"
+            },
+            {
+                "name": "Grey",
+                "hex": "#808080"
+            }
+        ],
+        "returnPolicy": "30-day return policy.",
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "3-5"
+        },
+        "price": 270,
+        "stock": {
+            "L": 12,
+            "XL": 7,
+            "XXL": 5,
+            "M": 10,
+            "S": 8
+        },
+        "reviewCount": 70,
+        "rating": 4.4,
+        "brand": "Dominion",
+        "description": "Classic zip-up hoodie for everyday comfort.",
+        "name": "Classic Zip Hoodie"
+    },
+    {
+        "id": "product_15",
+        "tags": [
+            "eco",
+            "casual"
+        ],
+        "brand": "Dominion",
+        "description": "Eco-friendly cotton t-shirt for sustainable fashion.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "rating": 4.5,
+        "currency": "INR",
+        "availableColors": [
+            {
+                "hex": "#008000",
+                "name": "Green"
+            },
+            {
+                "name": "White",
+                "hex": "#FFFFFF"
+            }
+        ],
+        "discountPrice": 120,
+        "stock": {
+            "XL": 12,
+            "S": 15,
+            "M": 18,
+            "L": 20
+        },
+        "createdAt": "2024-06-15T06:00:00Z",
+        "reviews": [
+            {
+                "user": "Priya Desai",
+                "rating": 5,
+                "comment": "Love the eco-friendly material.",
+                "date": "2024-06-15"
+            }
+        ],
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": true
+        },
+        "price": 150,
+        "returnPolicy": "15-day return policy.",
+        "name": "Eco Cotton Tee",
+        "reviewCount": 65,
+        "images": [
+            "/images/tshirt_eco_front.png",
+            "/images/tshirt_eco_back.png"
+        ],
+        "type": "t-shirt"
+    },
+    {
+        "id": "product_16",
+        "availableColors": [
+            {
+                "hex": "#0000FF",
+                "name": "Blue"
+            }
+        ],
+        "price": 110,
+        "description": "Trendy denim cap for a casual look.",
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": false
+        },
+        "returnPolicy": "7-day return policy.",
+        "rating": 4.3,
+        "type": "cap",
+        "brand": "Dominion",
+        "sizes": [
+            "Free Size"
+        ],
+        "createdAt": "2024-06-16T05:00:00Z",
+        "name": "Denim Cap",
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Suresh Reddy",
+                "comment": "Stylish and comfortable.",
+                "date": "2024-06-16"
+            }
+        ],
+        "tags": [
+            "denim",
+            "casual"
+        ],
+        "stock": {
+            "Free Size": 20
+        },
+        "reviewCount": 25,
+        "images": [
+            "/images/cap_denim_front.png",
+            "/images/cap_denim_side.png"
+        ],
+        "discountPrice": 90,
+        "currency": "INR"
+    },
+    {
+        "id": "product_17",
+        "type": "hoodie",
+        "brand": "Dominion",
+        "createdAt": "2024-06-17T04:00:00Z",
+        "price": 280,
+        "reviewCount": 50,
+        "tags": [
+            "oversized",
+            "casual"
+        ],
+        "stock": {
+            "XL": 8,
+            "M": 9,
+            "XXL": 6,
+            "L": 11
+        },
+        "currency": "INR",
+        "reviews": [
+            {
+                "date": "2024-06-17",
+                "rating": 5,
+                "comment": "Super comfy and trendy.",
+                "user": "Anjali Rao"
+            }
+        ],
+        "name": "Oversized Hoodie",
+        "delivery": {
+            "estimatedDays": "3-5",
+            "freeShipping": true
+        },
+        "rating": 4.6,
+        "images": [
+            "/images/hoodie_oversized_purple_front.png",
+            "/images/hoodie_oversized_purple_back.png"
+        ],
+        "returnPolicy": "30-day return policy.",
+        "sizes": [
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "discountPrice": 220,
+        "description": "Oversized hoodie for a relaxed fit.",
+        "availableColors": [
+            {
+                "hex": "#800080",
+                "name": "Purple"
+            },
+            {
+                "name": "Black",
+                "hex": "#000000"
+            }
+        ]
+    },
+    {
+        "id": "product_18",
+        "discountPrice": 110,
+        "currency": "INR",
+        "type": "t-shirt",
+        "description": "T-shirt with contrast color sleeves.",
+        "tags": [
+            "contrast",
+            "casual"
+        ],
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Vivek Singh",
+                "date": "2024-06-18",
+                "comment": "Nice color combo."
+            }
+        ],
+        "brand": "Dominion",
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "rating": 4.2,
+        "availableColors": [
+            {
+                "name": "White/Black",
+                "hex": "#FFFFFF/#000000"
+            },
+            {
+                "hex": "#808080/#000080",
+                "name": "Grey/Navy"
+            }
+        ],
+        "createdAt": "2024-06-18T03:00:00Z",
+        "images": [
+            "/images/tshirt_contrast_front.png",
+            "/images/tshirt_contrast_back.png"
+        ],
+        "returnPolicy": "15-day return policy.",
+        "price": 135,
+        "stock": {
+            "L": 18,
+            "XL": 10,
+            "M": 16,
+            "S": 14
+        },
+        "name": "Contrast Sleeve Tee",
+        "reviewCount": 40
+    },
+    {
+        "id": "product_19",
+        "brand": "Dominion",
+        "sizes": [
+            "Free Size"
+        ],
+        "images": [
+            "/images/cap_flatbrim_front.png",
+            "/images/cap_flatbrim_side.png"
+        ],
+        "tags": [
+            "flatbrim",
+            "street"
+        ],
+        "price": 120,
+        "rating": 4,
+        "type": "cap",
+        "discountPrice": 95,
+        "name": "Flat Brim Cap",
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Ramesh Patel",
+                "comment": "Looks great with casual outfits.",
+                "date": "2024-06-19"
+            }
+        ],
+        "createdAt": "2024-06-19T02:00:00Z",
+        "returnPolicy": "7-day return policy.",
+        "description": "Flat brim cap for a modern street look.",
+        "availableColors": [
+            {
+                "name": "Black",
+                "hex": "#000000"
+            },
+            {
+                "hex": "#FF0000",
+                "name": "Red"
+            }
+        ],
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": false
+        },
+        "currency": "INR",
+        "reviewCount": 22,
+        "stock": {
+            "Free Size": 18
+        }
+    },
+    {
+        "id": "product_2",
+        "rating": 4.2,
+        "description": "Classic urban hoodie with a modern fit and durable fabric.",
+        "type": "hoodie",
+        "stock": {
+            "L": 15,
+            "S": 12,
+            "XL": 10,
+            "M": 18
+        },
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "currency": "INR",
+        "price": 300,
+        "createdAt": "2024-06-02T11:00:00Z",
+        "brand": "Dominion",
+        "discountPrice": 220,
+        "tags": [
+            "urban",
+            "casual"
+        ],
+        "returnPolicy": "30-day return policy.",
+        "reviews": [
+            {
+                "rating": 4,
+                "comment": "Nice fit and warm.",
+                "user": "Rahul Verma",
+                "date": "2024-06-09"
+            }
+        ],
+        "reviewCount": 98,
+        "availableColors": [
+            {
+                "hex": "#000000",
+                "name": "Black"
+            },
+            {
+                "hex": "#808080",
+                "name": "Grey"
+            }
+        ],
+        "delivery": {
+            "estimatedDays": "2-4",
+            "freeShipping": true
+        },
+        "name": "Urban Classic Hoodie",
+        "images": [
+            "/images/hoodie_black_front.png",
+            "/images/hoodie_black_back.png"
+        ]
+    },
+    {
+        "id": "product_20",
+        "tags": [
+            "fleece",
+            "winter"
+        ],
+        "reviewCount": 35,
+        "description": "Warm fleece hoodie for chilly days.",
+        "availableColors": [
+            {
+                "hex": "#808080",
+                "name": "Grey"
+            },
+            {
+                "name": "Navy",
+                "hex": "#000080"
+            }
+        ],
+        "reviews": [
+            {
+                "user": "Divya Sharma",
+                "comment": "Very warm and soft.",
+                "rating": 5,
+                "date": "2024-06-20"
+            }
+        ],
+        "stock": {
+            "XL": 6,
+            "L": 9,
+            "M": 7
+        },
+        "createdAt": "2024-06-20T01:00:00Z",
+        "returnPolicy": "30-day return policy.",
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "3-5"
+        },
+        "brand": "Dominion",
+        "discountPrice": 250,
+        "type": "hoodie",
+        "rating": 4.5,
+        "price": 320,
+        "name": "Fleece Hoodie",
+        "currency": "INR",
+        "images": [
+            "/images/hoodie_fleece_grey_front.png",
+            "/images/hoodie_fleece_grey_back.png"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ]
+    },
+    {
+        "id": "product_21",
+        "returnPolicy": "15-day return policy.",
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "discountPrice": 100,
+        "description": "Classic V-neck t-shirt for a stylish look.",
+        "stock": {
+            "S": 12,
+            "M": 14,
+            "XL": 8,
+            "L": 16
+        },
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "reviewCount": 28,
+        "reviews": [
+            {
+                "rating": 4,
+                "user": "Kavita Joshi",
+                "date": "2024-06-21",
+                "comment": "Good fit and fabric."
+            }
+        ],
+        "price": 125,
+        "type": "t-shirt",
+        "currency": "INR",
+        "name": "V-Neck Tee",
+        "images": [
+            "/images/tshirt_vneck_black_front.png",
+            "/images/tshirt_vneck_black_back.png"
+        ],
+        "brand": "Dominion",
+        "availableColors": [
+            {
+                "name": "Black",
+                "hex": "#000000"
+            },
+            {
+                "hex": "#0000FF",
+                "name": "Blue"
+            }
+        ],
+        "tags": [
+            "vneck",
+            "casual"
+        ],
+        "createdAt": "2024-06-21T10:00:00Z",
+        "rating": 4.3
+    },
+    {
+        "id": "product_22",
+        "name": "Canvas Cap",
+        "type": "cap",
+        "tags": [
+            "canvas",
+            "outdoor"
+        ],
+        "description": "Durable canvas cap for outdoor adventures.",
+        "reviews": [
+            {
+                "comment": "Perfect for hiking.",
+                "user": "Sunil Kumar",
+                "rating": 4,
+                "date": "2024-06-22"
+            }
+        ],
+        "availableColors": [
+            {
+                "name": "Green",
+                "hex": "#008000"
+            },
+            {
+                "name": "Beige",
+                "hex": "#F5F5DC"
+            }
+        ],
+        "createdAt": "2024-06-22T09:00:00Z",
+        "images": [
+            "/images/cap_canvas_green_front.png",
+            "/images/cap_canvas_green_side.png"
+        ],
+        "returnPolicy": "7-day return policy.",
+        "price": 105,
+        "stock": {
+            "Free Size": 16
+        },
+        "rating": 4.2,
+        "reviewCount": 20,
+        "brand": "Dominion",
+        "discountPrice": 85,
+        "sizes": [
+            "Free Size"
+        ],
+        "currency": "INR",
+        "delivery": {
+            "freeShipping": false,
+            "estimatedDays": "2-3"
+        }
+    },
+    {
+        "id": "product_23",
+        "rating": 4.4,
+        "stock": {
+            "M": 10,
+            "XL": 6,
+            "S": 8,
+            "L": 12
+        },
+        "returnPolicy": "30-day return policy.",
+        "tags": [
+            "urban",
+            "minimal"
+        ],
+        "discountPrice": 230,
+        "delivery": {
+            "estimatedDays": "3-5",
+            "freeShipping": true
+        },
+        "images": [
+            "/images/hoodie_urban_black_front.png",
+            "/images/hoodie_urban_black_back.png"
+        ],
+        "reviewCount": 32,
+        "price": 290,
+        "brand": "Dominion",
+        "description": "Urban style hoodie with minimal branding.",
+        "currency": "INR",
+        "name": "Urban Hoodie",
+        "createdAt": "2024-06-23T08:00:00Z",
+        "reviews": [
+            {
+                "date": "2024-06-23",
+                "comment": "Very stylish and comfortable.",
+                "user": "Amitabh Roy",
+                "rating": 5
+            }
+        ],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "type": "hoodie",
+        "availableColors": [
+            {
+                "name": "Black",
+                "hex": "#000000"
+            },
+            {
+                "name": "White",
+                "hex": "#FFFFFF"
+            }
+        ]
+    },
+    {
+        "id": "product_24",
+        "price": 130,
+        "discountPrice": 105,
+        "returnPolicy": "15-day return policy.",
+        "availableColors": [
+            {
+                "hex": "#000080/#FFFFFF",
+                "name": "Navy/White"
+            }
+        ],
+        "createdAt": "2024-06-24T07:00:00Z",
+        "type": "t-shirt",
+        "reviews": [
+            {
+                "user": "Megha Jain",
+                "comment": "Nice stripes and fit.",
+                "date": "2024-06-24",
+                "rating": 4
+            }
+        ],
+        "description": "T-shirt with horizontal stripes for a classic look.",
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": true
+        },
+        "brand": "Dominion",
+        "rating": 4.1,
+        "stock": {
+            "XL": 8,
+            "M": 12,
+            "S": 10,
+            "L": 14
+        },
+        "reviewCount": 18,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "tags": [
+            "striped",
+            "classic"
+        ],
+        "currency": "INR",
+        "images": [
+            "/images/tshirt_striped_front.png",
+            "/images/tshirt_striped_back.png"
+        ],
+        "name": "Striped Tee"
+    },
+    {
+        "id": "product_25",
+        "images": [
+            "/images/cap_snapback_black_front.png",
+            "/images/cap_snapback_black_side.png"
+        ],
+        "returnPolicy": "7-day return policy.",
+        "price": 115,
+        "discountPrice": 90,
+        "availableColors": [
+            {
+                "name": "Black",
+                "hex": "#000000"
+            },
+            {
+                "hex": "#0000FF",
+                "name": "Blue"
+            }
+        ],
+        "currency": "INR",
+        "reviewCount": 15,
+        "sizes": [
+            "Free Size"
+        ],
+        "description": "Trendy snapback cap with adjustable fit.",
+        "tags": [
+            "snapback",
+            "trendy"
+        ],
+        "brand": "Dominion",
+        "delivery": {
+            "freeShipping": false,
+            "estimatedDays": "2-3"
+        },
+        "type": "cap",
+        "rating": 4.2,
+        "stock": {
+            "Free Size": 14
+        },
+        "reviews": [
+            {
+                "rating": 4,
+                "date": "2024-06-25",
+                "comment": "Good fit and style.",
+                "user": "Nitin Bansal"
+            }
+        ],
+        "createdAt": "2024-06-25T06:00:00Z",
+        "name": "Snapback Cap"
+    },
+    {
+        "id": "product_26",
+        "reviews": [
+            {
+                "date": "2024-06-26",
+                "rating": 5,
+                "user": "Riya Kapoor",
+                "comment": "Trendy and comfortable."
+            }
+        ],
+        "tags": [
+            "cropped",
+            "modern"
+        ],
+        "stock": {
+            "L": 6,
+            "S": 7,
+            "M": 9
+        },
+        "createdAt": "2024-06-26T05:00:00Z",
+        "reviewCount": 20,
+        "images": [
+            "/images/hoodie_cropped_pink_front.png",
+            "/images/hoodie_cropped_pink_back.png"
+        ],
+        "type": "hoodie",
+        "returnPolicy": "30-day return policy.",
+        "price": 240,
+        "rating": 4.5,
+        "description": "Cropped hoodie for a modern, youthful look.",
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ],
+        "brand": "Dominion",
+        "delivery": {
+            "estimatedDays": "3-5",
+            "freeShipping": true
+        },
+        "name": "Cropped Hoodie",
+        "availableColors": [
+            {
+                "name": "Pink",
+                "hex": "#FFC0CB"
+            },
+            {
+                "hex": "#FFFFFF",
+                "name": "White"
+            }
+        ],
+        "currency": "INR",
+        "discountPrice": 190
+    },
+    {
+        "id": "product_27",
+        "brand": "Dominion",
+        "currency": "INR",
+        "name": "Pocket Tee",
+        "availableColors": [
+            {
+                "name": "Grey",
+                "hex": "#808080"
+            },
+            {
+                "name": "Blue",
+                "hex": "#0000FF"
+            }
+        ],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "tags": [
+            "pocket",
+            "casual"
+        ],
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "reviews": [
+            {
+                "date": "2024-06-27",
+                "user": "Sonal Mehta",
+                "comment": "Pocket is very useful.",
+                "rating": 4
+            }
+        ],
+        "stock": {
+            "M": 13,
+            "XL": 7,
+            "L": 15,
+            "S": 11
+        },
+        "price": 120,
+        "description": "T-shirt with a stylish chest pocket.",
+        "type": "t-shirt",
+        "returnPolicy": "15-day return policy.",
+        "images": [
+            "/images/tshirt_pocket_grey_front.png",
+            "/images/tshirt_pocket_grey_back.png"
+        ],
+        "rating": 4.3,
+        "createdAt": "2024-06-27T04:00:00Z",
+        "reviewCount": 17,
+        "discountPrice": 98
+    },
+    {
+        "id": "product_28",
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": false
+        },
+        "sizes": [
+            "Free Size"
+        ],
+        "type": "cap",
+        "reviewCount": 12,
+        "description": "Classic trucker cap with mesh back.",
+        "brand": "Dominion",
+        "currency": "INR",
+        "returnPolicy": "7-day return policy.",
+        "name": "Trucker Cap",
+        "createdAt": "2024-06-28T03:00:00Z",
+        "stock": {
+            "Free Size": 12
+        },
+        "images": [
+            "/images/cap_trucker_white_front.png",
+            "/images/cap_trucker_white_side.png"
+        ],
+        "reviews": [
+            {
+                "user": "Ajay Singh",
+                "rating": 4,
+                "comment": "Good for summer.",
+                "date": "2024-06-28"
+            }
+        ],
+        "availableColors": [
+            {
+                "name": "White/Black",
+                "hex": "#FFFFFF/#000000"
+            }
+        ],
+        "rating": 4.1,
+        "tags": [
+            "trucker",
+            "classic"
+        ],
+        "discountPrice": 80,
+        "price": 100
+    },
+    {
+        "id": "product_29",
+        "images": [
+            "/images/hoodie_pullover_red_front.png",
+            "/images/hoodie_pullover_red_back.png"
+        ],
+        "price": 260,
+        "currency": "INR",
+        "availableColors": [
+            {
+                "name": "Red",
+                "hex": "#FF0000"
+            },
+            {
+                "hex": "#000000",
+                "name": "Black"
+            }
+        ],
+        "reviews": [
+            {
+                "user": "Pooja Nair",
+                "comment": "Very comfortable and warm.",
+                "date": "2024-06-29",
+                "rating": 5
+            }
+        ],
+        "delivery": {
+            "estimatedDays": "3-5",
+            "freeShipping": true
+        },
+        "type": "hoodie",
+        "rating": 4.4,
+        "discountPrice": 210,
+        "createdAt": "2024-06-29T02:00:00Z",
+        "name": "Pullover Hoodie",
+        "returnPolicy": "30-day return policy.",
+        "description": "Pullover hoodie with kangaroo pocket.",
+        "stock": {
+            "M": 8,
+            "XL": 7,
+            "L": 10
+        },
+        "tags": [
+            "pullover",
+            "casual"
+        ],
+        "reviewCount": 19,
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Dominion"
+    },
+    {
+        "id": "product_3",
+        "createdAt": "2024-06-03T09:00:00Z",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "currency": "INR",
+        "reviews": [
+            {
+                "date": "2024-06-07",
+                "user": "Sneha Rao",
+                "rating": 5,
+                "comment": "Super soft and fits perfectly."
+            }
+        ],
+        "delivery": {
+            "estimatedDays": "2-3",
+            "freeShipping": true
+        },
+        "reviewCount": 210,
+        "rating": 4.7,
+        "type": "t-shirt",
+        "discountPrice": 99,
+        "returnPolicy": "15-day return policy.",
+        "images": [
+            "/images/tshirt_white_front.png",
+            "/images/tshirt_white_back.png"
+        ],
+        "availableColors": [
+            {
+                "hex": "#FFFFFF",
+                "name": "White"
+            },
+            {
+                "hex": "#000080",
+                "name": "Navy"
+            }
+        ],
+        "stock": {
+            "S": 20,
+            "XXL": 10,
+            "L": 30,
+            "M": 25,
+            "XL": 15
+        },
+        "description": "Soft cotton t-shirt with Dominion logo print.",
+        "tags": [
+            "summer",
+            "casual",
+            "unisex"
+        ],
+        "price": 120,
+        "brand": "Dominion",
+        "name": "Dominion Logo Tee"
+    },
+    {
+        "id": "product_30",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "rating": 4.2,
+        "stock": {
+            "S": 9,
+            "XL": 6,
+            "M": 11,
+            "L": 13
+        },
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "name": "Longline Tee",
+        "currency": "INR",
+        "returnPolicy": "15-day return policy.",
+        "description": "Longline t-shirt for a modern silhouette.",
+        "images": [
+            "/images/tshirt_longline_black_front.png",
+            "/images/tshirt_longline_black_back.png"
+        ],
+        "createdAt": "2024-06-30T01:00:00Z",
+        "tags": [
+            "longline",
+            "modern"
+        ],
+        "type": "t-shirt",
+        "reviewCount": 14,
+        "reviews": [
+            {
+                "date": "2024-06-30",
+                "comment": "Nice length and fit.",
+                "user": "Tarun Sharma",
+                "rating": 4
+            }
+        ],
+        "brand": "Dominion",
+        "availableColors": [
+            {
+                "hex": "#000000",
+                "name": "Black"
+            },
+            {
+                "hex": "#FFFFFF",
+                "name": "White"
+            }
+        ],
+        "price": 145,
+        "discountPrice": 115
+    },
+    {
+        "id": "product_4",
+        "rating": 4.3,
+        "createdAt": "2024-06-04T08:00:00Z",
+        "returnPolicy": "7-day return policy.",
+        "currency": "INR",
+        "description": "Adjustable street style cap with embroidered logo.",
+        "discountPrice": 65,
+        "price": 80,
+        "type": "cap",
+        "name": "Street Style Cap",
+        "sizes": [
+            "Free Size"
+        ],
+        "availableColors": [
+            {
+                "hex": "#FF0000",
+                "name": "Red"
+            },
+            {
+                "name": "Black",
+                "hex": "#000000"
+            }
+        ],
+        "brand": "Dominion",
+        "reviewCount": 60,
+        "tags": [
+            "accessory",
+            "casual"
+        ],
+        "delivery": {
+            "freeShipping": false,
+            "estimatedDays": "1-3"
+        },
+        "reviews": [
+            {
+                "date": "2024-06-06",
+                "user": "Vikas Sharma",
+                "rating": 4,
+                "comment": "Good quality and fits well."
+            }
+        ],
+        "stock": {
+            "Free Size": 40
+        },
+        "images": [
+            "/images/cap_red_front.png",
+            "/images/cap_red_side.png"
+        ]
+    },
+    {
+        "id": "product_5",
+        "currency": "INR",
+        "brand": "Dominion",
+        "stock": {
+            "S": 18,
+            "L": 25,
+            "M": 22,
+            "XL": 12
+        },
+        "returnPolicy": "15-day return policy.",
+        "discountPrice": 90,
+        "rating": 4.1,
+        "reviewCount": 75,
+        "price": 110,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "name": "Minimalist Tee",
+        "tags": [
+            "minimal",
+            "casual"
+        ],
+        "createdAt": "2024-06-05T07:00:00Z",
+        "reviews": [
+            {
+                "user": "Meera Joshi",
+                "comment": "Nice fabric and color.",
+                "rating": 4,
+                "date": "2024-06-05"
+            }
+        ],
+        "images": [
+            "/images/tshirt_grey_front.png",
+            "/images/tshirt_grey_back.png"
+        ],
+        "availableColors": [
+            {
+                "hex": "#808080",
+                "name": "Grey"
+            },
+            {
+                "name": "Blue",
+                "hex": "#0000FF"
+            }
+        ],
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-4"
+        },
+        "type": "t-shirt",
+        "description": "Minimalist design t-shirt for everyday wear."
+    },
+    {
+        "id": "product_6",
+        "images": [
+            "/images/cap_blue_front.png",
+            "/images/cap_blue_side.png"
+        ],
+        "delivery": {
+            "freeShipping": false,
+            "estimatedDays": "2-3"
+        },
+        "description": "Lightweight sporty cap for outdoor activities.",
+        "availableColors": [
+            {
+                "hex": "#0000FF",
+                "name": "Blue"
+            },
+            {
+                "name": "White",
+                "hex": "#FFFFFF"
+            }
+        ],
+        "type": "cap",
+        "brand": "Dominion",
+        "name": "Sporty Cap",
+        "reviewCount": 50,
+        "currency": "INR",
+        "returnPolicy": "7-day return policy.",
+        "rating": 4,
+        "stock": {
+            "Free Size": 35
+        },
+        "price": 90,
+        "sizes": [
+            "Free Size"
+        ],
+        "tags": [
+            "sport",
+            "accessory"
+        ],
+        "reviews": [
+            {
+                "date": "2024-06-04",
+                "comment": "Great for running.",
+                "rating": 4,
+                "user": "Arjun Patel"
+            }
+        ],
+        "createdAt": "2024-06-06T06:00:00Z",
+        "discountPrice": 70
+    },
+    {
+        "id": "product_7",
+        "brand": "Dominion",
+        "reviewCount": 80,
+        "discountPrice": 270,
+        "type": "hoodie",
+        "reviews": [
+            {
+                "date": "2024-06-03",
+                "comment": "Super warm and cozy.",
+                "rating": 5,
+                "user": "Kiran Nair"
+            }
+        ],
+        "createdAt": "2024-06-07T05:00:00Z",
+        "tags": [
+            "winter",
+            "warm"
+        ],
+        "name": "Winter Warm Hoodie",
+        "sizes": [
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": [
+            "/images/hoodie_navy_front.png",
+            "/images/hoodie_navy_back.png"
+        ],
+        "currency": "INR",
+        "description": "Extra warm hoodie for winter with thick fleece lining.",
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "3-5"
+        },
+        "rating": 4.6,
+        "price": 350,
+        "returnPolicy": "30-day return policy.",
+        "availableColors": [
+            {
+                "hex": "#000080",
+                "name": "Navy"
+            },
+            {
+                "name": "Grey",
+                "hex": "#808080"
+            }
+        ],
+        "stock": {
+            "M": 10,
+            "XL": 8,
+            "XXL": 6,
+            "L": 12
+        }
+    },
+    {
+        "id": "product_8",
+        "createdAt": "2024-06-08T04:00:00Z",
+        "brand": "Dominion",
+        "description": "Trendy t-shirt with bold graphic print.",
+        "availableColors": [
+            {
+                "hex": "#000000",
+                "name": "Black"
+            },
+            {
+                "name": "Red",
+                "hex": "#FF0000"
+            }
+        ],
+        "rating": 4.4,
+        "reviewCount": 95,
+        "stock": {
+            "M": 20,
+            "L": 18,
+            "S": 15,
+            "XL": 10
+        },
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "images": [
+            "/images/tshirt_black_graphic_front.png",
+            "/images/tshirt_black_graphic_back.png"
+        ],
+        "delivery": {
+            "freeShipping": true,
+            "estimatedDays": "2-3"
+        },
+        "tags": [
+            "graphic",
+            "casual"
+        ],
+        "discountPrice": 105,
+        "reviews": [
+            {
+                "user": "Ritu Sharma",
+                "date": "2024-06-02",
+                "comment": "Love the print and fit.",
+                "rating": 5
+            }
+        ],
+        "currency": "INR",
+        "name": "Graphic Print Tee",
+        "returnPolicy": "15-day return policy.",
+        "type": "t-shirt",
+        "price": 130
+    },
+    {
+        "id": "product_9",
+        "sizes": [
+            "Free Size"
+        ],
+        "delivery": {
+            "freeShipping": false,
+            "estimatedDays": "1-2"
+        },
+        "name": "Classic Snapback Cap",
+        "createdAt": "2024-06-09T03:00:00Z",
+        "rating": 4.2,
+        "stock": {
+            "Free Size": 30
+        },
+        "price": 100,
+        "brand": "Dominion",
+        "images": [
+            "/images/cap_black_snapback_front.png",
+            "/images/cap_black_snapback_side.png"
+        ],
+        "availableColors": [
+            {
+                "hex": "#000000",
+                "name": "Black"
+            },
+            {
+                "name": "Grey",
+                "hex": "#808080"
+            }
+        ],
+        "returnPolicy": "7-day return policy.",
+        "tags": [
+            "snapback",
+            "accessory"
+        ],
+        "discountPrice": 80,
+        "reviewCount": 40,
+        "description": "Classic snapback cap with adjustable strap.",
+        "reviews": [
+            {
+                "comment": "Stylish and comfortable.",
+                "rating": 4,
+                "date": "2024-06-01",
+                "user": "Sahil Mehta"
+            }
+        ],
+        "currency": "INR",
+        "type": "cap"
+    }
+]
